@@ -85,7 +85,6 @@ body {
   padding: 1rem;
   border: 2px solid var(--code-bg);
   border-radius: 0.5rem;
-  font-family: "Bitter", sans-serif;
   font-size: 1.1rem;
   background-color: var(--light-bg);
 }
@@ -95,14 +94,11 @@ body {
   background-color: var(--minions-color);
   color: var(--code-bg);
   border: 2px solid var(--code-bg);
-  font-family: "Bitter", sans-serif;
   text-decoration: none;
   border-radius: 0.5rem;
   margin: 2rem 1rem;
   padding: 0.5rem 1rem;
-
 }
-
 
 /*
  ______________________________________________
