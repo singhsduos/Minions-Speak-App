@@ -1,3 +1,5 @@
+var apiAlert = "Note: Only 5 time per hour it translate."
+alert(apiAlert);
 var inputBox = document.querySelector("#input-box");
 var translateBtn = document.querySelector("#translate-btn");
 var outputBox = document.querySelector("#output-box");
