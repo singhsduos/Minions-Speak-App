@@ -89,7 +89,7 @@ body {
   background-color: var(--light-bg);
 }
 
-#output-box{
+#output-box {
   margin-bottom: 0rem;
 }
 
@@ -112,19 +112,21 @@ body {
   flex-wrap: wrap;
 }
 
-.voices{
+.voices {
   display: flex;
-   background-color: var(--minions-color);
+  background-color: var(--minions-color);
   color: var(--code-bg);
   border: 2px solid var(--code-bg);
-    text-decoration: none;
+  text-decoration: none;
   border-radius: 0.5rem;
   margin: 0.5rem 0rem;
   padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.voices p{
-  margin: 0rem
+.voices p {
+  margin: 0rem;
 }
 
 #voiceList {
@@ -207,9 +209,9 @@ footer {
     margin: 1rem auto;
   }
 
-  #output-box{
-  margin-bottom: 2rem;
-}
+  #output-box {
+    margin-bottom: 2rem;
+  }
 
   .listend-box {
     margin-top: -1em;
