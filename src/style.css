@@ -1,82 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+
+/*
+ ______________________________________________
+|                                              |
+|        DEFAULT BODY AND ROOT TAG CSS         |
+|______________________________________________|
+*/
+
 
 :root {
-  --banana-yellow: #FCE029;
-  --raisin-black: #231F20;
-  --off-white: #F3F4F6;
+  --minions-color: #ffff3f;
+  --code-bg: #001219;
+  --light-bg: #f4f4f4;
 }
+
 
 body {
   margin: 0;
-  font-family: 'Bitter', sans-serif;
-  background-image: url(/img/minions.jpg);
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(/images/minions.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
+  box-sizing: border-box;
 }
 
-/* nav */
+/*
+ ______________________________________________
+|                                              |
+|              UTILITIES CLASS                 |
+|______________________________________________|
 
-.navigation {
-  background-color: var(--banana-yellow);
-  color: var(--raisin-black);
-  font-size: large;
-  padding: 0.1rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  opacity: 85%;
-}
+*/
 
-.navigation h1 {
-  font-weight: 900;
-}
 
-.navigation a {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  font-size: 2.75rem;
-  color: var(--raisin-black);
+.heading,
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap;   */
 }
+ 
 
 /* container */
 
 .container {
-  max-width: 100%;
-  width: 600px;
-  margin: auto;
   text-align: center;
+  margin: auto;
   opacity: 90%;
 }
 
-/* input textarea, button and output div */
+/*
+ ______________________________________________
+|                                              |
+|             HEADER CLASS                 |
+|______________________________________________|
 
-.container .text-box {
-  display: block;
+*/
+
+
+.heading{
+background-color: var(--minions-color);
+}
+
+/*
+ ______________________________________________
+|                                              |
+|             MAIN SECTION CSS                 |
+|______________________________________________|
+*/
+
+/* text- area*/
+
+.text-box {
+
   height: 10vh;
-  max-width: 80%;
+  max-width: 90%;
   width: 500px;
-  margin: auto;
+  margin: 1rem auto;
   padding: 1rem;
-  border: 2px solid var(--raisin-black);
+  border: 2px solid var(--code-bg);
   border-radius: 0.5rem;
-  font-family: 'Bitter', sans-serif;
+  font-family: "Bitter", sans-serif;
   font-size: 1.1rem;
-  background-color: var(--off-white);
+  background-color: var(--light-bg);
 }
 
-.container #btn-translate {
-  background-color: var(--banana-yellow);
-  color: var(--raisin-black);
-  border: 2px solid var(--raisin-black);
-  font-family: 'Bitter', sans-serif;
-  font-weight: bold;
-  font-size: medium;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1.5rem auto;
+/* button */
+.btn {
+  background-color: var(--minions-color);
+  color: var(--code-bg);
+  border: 2px solid var(--code-bg);
+  font-family: "Bitter", sans-serif;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin: 2rem 1rem;
+  padding: 0.5rem 1rem;
 }
+
+
+
+/*
+ ______________________________________________
+|                                              |
+|             FOOTER SECTION CSS               |
+|______________________________________________|
+
+*/
+
+
 
 /* footer */
 
@@ -87,20 +124,47 @@ footer {
   left: 0;
   max-width: 100%;
   padding: 1rem 0.5rem;
-  background-color: var(--banana-yellow);
+  background-color: var(--minions-color);
   text-align: center;
-  opacity: 85%;
+  opacity: 90%;
+  justify-content: space-evenly;
 }
 
-footer #about {
-  font-size: larger;
-  font-weight: 800;
+.copyright{
+  margin-right: 2em;
 }
 
-footer p {
-  max-width: 100%;
-  width: 500px;
-  margin: auto;
-  padding: 1rem 0 0;
-  line-height: 1.5em;
+.about{
+max-width:80%;
+width:500px;
 }
+
+.about h3{
+  margin: 0rem;
+}
+
+.about h4{
+  margin-top: 0rem;
+}
+
+.about p{
+  margin: 0.2em 2rem;
+}
+
+.socialMedia{
+  margin-left: 2em;
+}
+
+.socialMedia i {
+  color: var(--code-bg);
+}
+
+
+
+/*
+ ______________________________________________
+|                                              |
+|            MEDIA QUERIES CSS                 |
+|______________________________________________|
+
+*/

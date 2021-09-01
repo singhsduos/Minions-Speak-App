@@ -29,4 +29,4 @@ function buttonclickEvent() {
 }
 
 // click event for translation button
-btn.addEventListener("click", buttonclickEvent);
+btn.addEventListener('click', buttonclickEvent);
