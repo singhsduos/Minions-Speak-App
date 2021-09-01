@@ -1,5 +1,5 @@
 var inputBox = document.querySelector("#input-box");
-var btn = document.querySelector("#btn");
+var translateBtn = document.querySelector("#translate-btn");
 var outputBox = document.querySelector("#output-box");
 var serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
@@ -29,4 +29,4 @@ function buttonclickEvent() {
 }
 
 // click event for translation button
-btn.addEventListener('click', buttonclickEvent);
+translateBtn.addEventListener('click', buttonclickEvent);

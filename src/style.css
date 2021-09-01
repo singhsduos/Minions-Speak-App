@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 
-
 /*
  ______________________________________________
 |                                              |
@@ -8,13 +7,11 @@
 |______________________________________________|
 */
 
-
 :root {
   --minions-color: #ffff3f;
   --code-bg: #001219;
   --light-bg: #f4f4f4;
 }
-
 
 body {
   margin: 0;
@@ -26,6 +23,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   box-sizing: border-box;
+  line-height: 1.1;
 }
 
 /*
@@ -36,7 +34,6 @@ body {
 
 */
 
-
 .heading,
 .footer {
   display: flex;
@@ -45,7 +42,6 @@ body {
   align-items: center;
   /* flex-wrap: wrap;   */
 }
- 
 
 /* container */
 
@@ -63,9 +59,8 @@ body {
 
 */
 
-
-.heading{
-background-color: var(--minions-color);
+.heading {
+  background-color: var(--minions-color);
 }
 
 /*
@@ -77,8 +72,12 @@ background-color: var(--minions-color);
 
 /* text- area*/
 
-.text-box {
+.main {
+  max-width: 100%;
+  width: 600px;
+}
 
+.text-box {
   height: 10vh;
   max-width: 90%;
   width: 500px;
@@ -101,8 +100,8 @@ background-color: var(--minions-color);
   border-radius: 0.5rem;
   margin: 2rem 1rem;
   padding: 0.5rem 1rem;
-}
 
+}
 
 
 /*
@@ -112,8 +111,6 @@ background-color: var(--minions-color);
 |______________________________________________|
 
 */
-
-
 
 /* footer */
 
@@ -130,36 +127,39 @@ footer {
   justify-content: space-evenly;
 }
 
-.copyright{
+.copyright {
   margin-right: 2em;
 }
 
-.about{
-max-width:80%;
-width:500px;
+.about {
+  max-width: 80%;
+  width: 500px;
 }
 
-.about h3{
+.about h3 {
   margin: 0rem;
 }
 
-.about h4{
+.about h4 {
   margin-top: 0rem;
 }
 
-.about p{
+.about p {
   margin: 0.2em 2rem;
 }
 
-.socialMedia{
+.socialMedia {
   margin-left: 2em;
+}
+
+.socialMedia a {
+  margin: 0.5em;
+  /* padding: 0.5rem; */
 }
 
 .socialMedia i {
   color: var(--code-bg);
 }
-
-
 
 /*
  ______________________________________________
@@ -168,3 +168,41 @@ width:500px;
 |______________________________________________|
 
 */
+
+@media screen and (max-width: 560px) {
+  .heading,
+  .footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 0;
+    font-size: 0.8em;
+  }
+
+  .copyright {
+    margin-right: 0;
+  }
+
+  .copyright h2 {
+    margin-bottom: 0rem;
+  }
+  .copyright p {
+    margin-top: 0.1rem;
+  }
+
+  .socialMedia {
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  footer {
+    padding: 0;
+    margin: 0;
+    font-size: 0.5em;
+    text-align: center;
+  }
+}
