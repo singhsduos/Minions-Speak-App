@@ -2,7 +2,7 @@
 This is a fun translation web app that will translate as well as speak your sentences into banana language of the minions..
 
 
-### <a href="#" target="_blank">**Visit Now 🚀**</a>
+### <a href="https://minions-speak-up.netlify.app/" target="_blank">**Visit Now 🚀**</a>
 
 ## Things I learend
 1. Working with VanillaJS
