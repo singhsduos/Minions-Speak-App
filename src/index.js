@@ -1,5 +1,5 @@
 var apiAlert = "Note: Only 5 time per hour it translate."
-// alert(apiAlert);
+alert(apiAlert);
 
 var synth = window.speechSynthesis;
 var voices = [];
@@ -39,7 +39,7 @@ function buttonclickEvent() {
 translateBtn.addEventListener('click', buttonclickEvent);
 
 
-
+// ---------------XXXXXXXXXXXXXXXXXX---------------
 
 
 // adding functionality to speak
@@ -50,7 +50,7 @@ if (speechSynthesis !== undefined) {
 
 // click event for listen button
 btnSpeak.addEventListener('click', () => {
-    var toSpeak = new SpeechSynthesisUtterance(outputBox.value);
+    var toSpeak = new SpeechSynthesisUtterance(outputBox.innerText);
     var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
     voices.forEach((voice) => {
         if (voice.name === selectedVoiceName) {
