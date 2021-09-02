@@ -207,6 +207,7 @@ footer {
 
   .text-box {
     margin: 1rem auto;
+    max-width: 80%;
   }
 
   #output-box {
@@ -239,7 +240,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 395px) {
+  .heading h1{
+    margin: 0.4em 0em;
+  }
+
   footer {
     padding: 0;
     margin: 0;
@@ -247,7 +252,15 @@ footer {
     text-align: center;
   }
 
+  #output-box{
+    margin-bottom: 1rem;
+  }
+
   .btn {
     margin: 1rem;
+  }
+
+  #btnSpeak{
+    margin: 0.3em 0em;
   }
 }
