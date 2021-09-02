@@ -39,7 +39,7 @@ function buttonclickEvent() {
 translateBtn.addEventListener('click', buttonclickEvent);
 
 
-// ---------------XXXXXXXXXXXXXXXXXX---------------
+// ---------------XXXXXXXXXXXXXXXXXX--------------- //
 
 
 // adding functionality to speak
