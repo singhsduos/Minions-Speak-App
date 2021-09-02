@@ -218,6 +218,10 @@ footer {
     margin-top: -1em;
   }
 
+  #btnSpeak{
+    margin: 0.7rem 1rem;
+  }
+
   footer {
     padding: 0;
     font-size: 0.8em;
